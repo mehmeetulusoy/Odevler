@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <title>Ana Sayfa</title>
+
+</head>
+
+<body>
+
+
+</body>
+<script>
+    //Odev Sorusu 1
+    function TamSayiCarpimTopla(sayi1, sayi2) {
+        var toplam = 0;
+        var carpimToplam = 0;
+        for (i = sayi1; i <= sayi2; i++) {
+            toplam += i;
+            carpimToplam = i * i;
+        }
+        console.log(sayi1 + " ile " + sayi2 + " arasındaki tam sayıların toplamları: " + toplam + "Çarpımlarının Toplamı: " + carpimToplam);
+    }
+    TamSayiCarpimTopla(10, 20);
+
+
+
+    //Odev Sorusu 2
+    function NotHesapla(vize, final) {
+        var ort = (vize + final) / 2;
+        var durum = "";
+        if (ort < 55) {
+            durum = "Kaldı.";
+            console.log("Öğrencinin vize notu: " + vize + " Final Notu: " + final + "'dır. Not Ortalaması: " + ort + " Öğrenci Sınıfta: " + durum);
+        }
+        if (ort >= 70) {
+            durum = "Geçti.";
+            console.log("Öğrencinin vize notu: " + vize + " Final Notu: " + final + "'dır. Not Ortalaması: " + ort + " Öğrenci Sınıfı: " + durum);
+        }
+        if (ort >= 55 && ort < 70) {
+            durum = "Büte Kaldı.";
+            console.log("Öğrencinin vize notu: " + vize + " Final Notu: " + final + "'dır. Not Ortalaması: " + ort + " Öğrenci: " + durum);
+        }
+    }
+    NotHesapla(100, 70);
+
+    //Odev Sorusu 3
+    function EnKucukSayiBul(sayi1, sayi2,sayi3){
+        if(sayi1<sayi2 && sayi1<sayi3){
+            console.log(sayi1);
+        }
+        else if(sayi2<sayi1 && sayi2<sayi3){
+            console.log(sayi2);
+        }
+        else{
+            console.log(sayi3);
+        }
+    }
+    EnKucukSayiBul(30,12,11);
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+
+</html>
